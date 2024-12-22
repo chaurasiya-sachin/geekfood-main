@@ -1,0 +1,61 @@
+.cardSection{
+    max-width: 1080px;
+    width: 95%;
+    height: auto;
+    margin: 3rem auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.feedBack{
+    width: 32%;
+    height: auto;
+    /* border: 2px solid rgb(217, 216, 215); */
+    border-radius: 10px;
+    /* padding: 0.5rem; */
+    /* text-align: center; */
+}
+
+.messageBox{
+    /* border: 1px solid grey; */
+    border-radius: 10px;
+    background-color: rgb(245, 252, 253);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem;
+}
+
+.userDetails{
+    display: flex;
+    margin: 1.5rem 0rem;
+    gap:2rem;
+}
+
+.userDetails img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:880px) {
+    .cardSection{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedBack{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .cardSection{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedBack{
+        width: 90%;
+    }
+}

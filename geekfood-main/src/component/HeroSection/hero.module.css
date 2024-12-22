@@ -1,0 +1,93 @@
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../assets/herosectionImage.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heroContent{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 1rem;    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.content h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: black;
+}
+
+.content h1 span{
+    color:rgb(249, 11, 130)
+}
+
+.buttonDiv button{
+    width: 35%;
+    height: 2.5rem;
+    border: none;
+    border-radius: 2px;
+    color: rgb(249, 12, 99);
+    margin-right:1rem;
+    background-color: whitesmoke;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.buttonDiv button:hover{
+    color: rgb(131, 4, 50);
+}
+
+.buttonDiv button:first-child{
+    background-color: rgb(249, 12, 99);
+    color: whitesmoke;
+}
+
+.buttonDiv button:first-child:hover{
+    background-color: rgb(131, 4, 50);
+}
+
+@media screen and (max-width:760px) {
+    .heroSection{
+        background-image: linear-gradient(0deg,rgb(248, 246, 246), rgba(249, 249, 249, 0.673), rgb(252, 252, 252)), url(../../assets/herosectionImage.avif);
+  
+
+
+    }
+    .heroContent{
+        align-items: center;
+        padding: 0rem 1rem;
+        text-align: center;
+    }
+
+    .content{
+       width: 90%;
+       align-items: center;
+    }
+
+    .buttonDiv{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+         
+
+    }
+}
